@@ -1,0 +1,25 @@
+{
+  "id": "906ec40f-723e-43a6-9b17-3a01f124ca68",
+  "generation": 1,
+  "iteration": 14,
+  "timestamp": 1772253241.875645,
+  "parent_id": "2d19af16-f94d-49c3-826b-3bfbd014d5e1",
+  "metrics": {
+    "score": -1.2569693374792643,
+    "runtime_score": -4.022940993309021e-05,
+    "scaling_k": 1.2565670433799334,
+    "artifacts": {
+      "timings": [
+        "n=64: median=0.000002s",
+        "n=128: median=0.000004s",
+        "n=256: median=0.000010s",
+        "n=512: median=0.000024s"
+      ],
+      "total_time_s": 4.022940993309021e-05,
+      "scaling_exponent_k": 1.2565670433799334,
+      "hint": "Must remain correct sort_fn(arr)->sorted list. Improving algorithm (e.g., O(n log n)) will reduce scaling_k."
+    }
+  },
+  "language": "python",
+  "saved_at": 1772253446.902931
+}

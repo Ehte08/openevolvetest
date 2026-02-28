@@ -1,0 +1,25 @@
+llm:
+  api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+  api_key: "AIzaSyDZ_NaKmYvAHAUBvNH11fhJ1WwPkfSfqYQ"
+  temperature: 0.4
+  models:
+    - name: "gemini-2.5-flash"
+      api_base: "https://generativelanguage.googleapis.com/v1beta/openai/"
+      api_key: "AIzaSyDZ_NaKmYvAHAUBvNH11fhJ1WwPkfSfqYQ"
+
+database:
+  population_size: 50
+  num_islands: 3
+  migration_interval: 10
+
+evaluator:
+  parallel_evaluations: 2
+
+prompt:
+  system_message: |
+    You are optimizing Python code inside the EVOLVE block.
+    Requirements:
+    - Must keep function signature sort_fn(arr) -> sorted list
+    - Must return exactly sorted(arr) for all integer lists
+    - Optimize runtime and scaling (aim for O(n log n) if possible)
+    - Avoid using external libraries beyond Python stdlib
